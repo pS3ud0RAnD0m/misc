@@ -14,12 +14,9 @@ EXTENSIONS=(^^^ 4dd 4dl abcddb abs abx accdb accdc accde accdr accdt accdw accft
            sqlite3 sqlitedb te teacher tmd tps trc trm udb udl usr v12 vis vpd wdb wmdb \
            wrk xdb xld)
 
-#printf '%s\n' ${EXTENSIONS[@]}
-
 printf "Searching for 161 database types ...\n"
 for i in ${EXTENSIONS[@]}
 do
-  #printf "%s\n" $i
   printf "\n"
   printf "#  $i\n"
   find / -type f -name *.$i
