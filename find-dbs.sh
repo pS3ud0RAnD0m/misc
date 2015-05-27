@@ -19,6 +19,7 @@ for i in ${EXTENSIONS[@]}
 do
   printf "\n"
   printf "#  $i\n"
-  find / -type f -name *.$i
+  find / -type f -name *.$i 2>/dev/null
 done
 printf "Done searching.\n"
+
