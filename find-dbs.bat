@@ -24,4 +24,3 @@ for /f "delims=" %%i in ('%list%') do (
   dir /s /b .%%i
 )
 echo Search complete!
-echo 
