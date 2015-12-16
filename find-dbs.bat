@@ -20,7 +20,7 @@ cd %searchpath%
 echo Changed directory: %searchpath%
 echo Searching for 161 database types ...
 for /f "delims=" %%i in ('%list%') do (
-  echo   Searching for .%%i files ..
+  echo   Searching for *.%%i files ..
   dir /s /b .%%i
 )
 echo Search complete!
